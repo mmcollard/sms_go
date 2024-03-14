@@ -1,15 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-p, h2, h3{
+a, h2, h3{
   font-family: raleway;
+
 }
 
-p{
-  color: #8D8D88
+a{
+  color: #8D8D88;
+  text-decoration: none;
+  font-size: 14px;
 }
+
+a:hover{
+  color: #4b4b4a;
+}
+
+
 h2, h3{
   color: #4b4b4a;
   font-weight: 500;
+  font-size: 16px;
 }
 
 
@@ -21,6 +31,15 @@ h2, h3{
   justify-content: center;
 }
 
+.barra-lateral-izquierda{
+  background-color: #fff;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 10px 16px 48px -3px rgba(125,125,125,0.27);
+-webkit-box-shadow: 10px 16px 48px -3px rgba(125,125,125,0.27);
+-moz-box-shadow: 10px 16px 48px -3px rgba(125,125,125,0.27);
+}
+
 .nombre-apellido{
   display: flex;
   align-items: center;
@@ -30,10 +49,14 @@ h2, h3{
   border-radius: 100%;
   width: 50px;
   height: 50px;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
+.contenedor-links{
+  display: flex;
+  flex-direction: column;
 
+}
 
 .espacio, .grupo{
   display: flex;
@@ -44,6 +67,10 @@ h2, h3{
 
 .espacio span, .grupo span{
   margin-right: 20px;
+}
+.espacio, .grupo, .contenedor-links a{
+  margin-top: 20px;
+
 }
 
 .simbolo{
@@ -56,4 +83,6 @@ h2, h3{
   height: 4px;
   border-radius: 3px;
 }
+
+
 
