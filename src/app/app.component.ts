@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { BotonesComponent } from './layout/botones/botones.component';
+import { BarraLateralComponent } from "./layout/barra-lateral/barra-lateral.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, BotonesComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css',
+    imports: [RouterOutlet, BotonesComponent, BarraLateralComponent]
 })
 export class AppComponent {
   title = 'proyectoangular';
