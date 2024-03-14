@@ -98,6 +98,15 @@
   align-self: flex-start;
 }
 
+a {
+  color: #A52030;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 
 h5 {
   margin: 0;
