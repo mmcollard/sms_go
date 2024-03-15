@@ -13,16 +13,17 @@ export class HeaderComponent {
 
   searchForm!: FormGroup;
   private readonly _fb = inject(FormBuilder);
-ngOnInit(): void {
+
+  ngOnInit(): void {
     this.initPersonaHumanaForm();
   }
+
   private initPersonaHumanaForm(): void {
     this.searchForm = this._fb.group({
       nroDocumento: new FormControl('', []),
-      buscar: new FormControl('', [Validators.required]),
-
+      buscador: new FormControl('', [Validators.required]),
 
     });
-  
+
   }
 }
