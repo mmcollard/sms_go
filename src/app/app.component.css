@@ -11,3 +11,35 @@
   }
 
 }
+.sin-viñetas {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-betwe
+
+}
+
+.sin-viñetas .medio {
+    display: flex;
+    list-style-type: none;
+
+}
+
+
+.header-distribucion {
+    display: flex;
+    justify-content: space-betwe
+}
+
+.espacio {
+    display: flex;
+justify-content: space-between;
+}
+
+.buscador {
+    margin-left: 20%;
+    padding-left: 20%;
+}
+
+.buscador button {
+background: transparent;
+}
