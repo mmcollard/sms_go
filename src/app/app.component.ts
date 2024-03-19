@@ -12,9 +12,7 @@ import { BarraLateralDerechaComponent } from "./layout/barra-lateral-derecha/bar
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-
-    imports: [RouterOutlet, BotonesComponent,HeaderComponent, BarraLateralComponent, CardPublicacionComponent, BarraLateralDerechaComponent]
-
+    imports: [RouterOutlet, HeaderComponent, CardPublicacionComponent, BotonesComponent, BarraLateralComponent, BarraLateralDerechaComponent]
 })
 export class AppComponent {
   title = 'proyectoangular';
