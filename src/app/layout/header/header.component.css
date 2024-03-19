@@ -19,7 +19,7 @@
   }
  
   img {
-    border-radius: 50%;
+    /* border-radius: 50%; */
     display: flex;
     width: 100px;
     height: 100px;
@@ -62,7 +62,7 @@
   .header-distribucion {
     width: 100%;
     /* max-width: 1024px; */
-    margin: 0 auto;
+    margin: 20px 0px;
     /* padding: 0 2rem; */
     display: flex;
     align-items: center;
