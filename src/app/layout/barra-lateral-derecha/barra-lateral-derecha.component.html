@@ -1,53 +1,110 @@
 <link rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<!-- ! CONTENEDOR BARRA LATERAL DERECHA -->
 
 <div class="barra-lateral-derecha">
 
+  <!-- ! CONTENEDOR NOVEDADES             -->
+
   <div class="contenedor-novedades">
 
-    <div class="novedad">
+    <!-- ! CARDS NOVEDAD                   -->
+
+    <!--
+    <h4>*ngFor</h4>
+
+    <h5>Array de strings (en una lista)</h5>
+
+    <ul>
+      <li *ngFor="let personas of personas; index as i">
+        {{i +1 }} - {{personas}}
+      </li>
+    </ul> -->
+
+    <div class="novedad" *ngFor="let novedades of novedades; index as i">
+      {{ i + 1 }} - {{novedades}}
       <div class="linea-superior-novedad">
         <span class="material-symbols-rounded">
           campaign
+          <span class="fecha-novedades">
+            xx/xx/xx
+          </span>
         </span>
-        <p>
+        <p class="p-novedad">
           Novedad XXXXXXXXXXX
         </p>
       </div>
     </div>
 
+    <!-- <div class="novedad">
+      <div class="linea-superior-novedad">
+        <span class="material-symbols-rounded">
+          campaign
+          <span class="fecha-novedades">
+            xx/xx/xx
+          </span>
+        </span>
+        <p class="p-novedad">
+          Novedad XXXXXXXXXXX
+        </p>
+      </div>
+    </div> -->
+
     <div class="novedad">
       <div class="linea-superior-novedad">
         <span class="material-symbols-rounded">
           campaign
+          <span class="fecha-novedades">
+            xx/xx/xx
+          </span>
         </span>
-        <p>
+        <p class="p-novedad">
           Novedad XXXXXXXXXXX
         </p>
       </div>
     </div>
-
-    <div class="novedad">
-      <div class="linea-superior-novedad">
-        <span class="material-symbols-rounded">
-          campaign
-        </span>
-        <p>
-          Novedad XXXXXXXXXXX
-        </p>
-      </div>
-    </div>
-
-
   </div>
 
+  <!-- ! CARD BENEFICIOS                 -->
 
-  <div class="beneficios">
-    <span>
-      regalito
-    </span>
-    <p>¡Beneficios SMS!</p>
+  <div class="card-beneficios">
+    <div class="beneficios">
+      <span class="material-symbols-outlined">
+        featured_seasonal_and_gifts
+      </span>
+      <h4>¡Beneficios SMS!</h4>
+    </div>
   </div>
-  <div class="prox-eventos"></div>
-  <div class="prox-cumpleanios"></div>
-</div>
+
+  <!-- ! PROXIMOS EVENTOS                -->
+
+  <div class="contenedor-proximos-eventos">
+    <div class="proximos-eventos">
+      <h4>Proximos Eventos</h4>
+
+      <div class="prox-eventos">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="">
+      </div>
+    </div>
+  </div>
+
+  <!-- ! PROXIMOS CUMPLEAÑOS               -->
+
+  <div class="cumpleanios">
+    <div>
+      <h4>Proximos Cumpleaños</h4>
+    </div>
+
+    <div class="prox-cumpleanios">
+      <link rel="stylesheet" href="">
+      <link rel="stylesheet" href="">
+      <link rel="stylesheet" href="">
+      <link rel="stylesheet" href="">
+    </div>
+  </div>

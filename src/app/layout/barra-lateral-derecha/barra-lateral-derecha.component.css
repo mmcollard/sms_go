@@ -1,4 +1,15 @@
+
+/* ! FAVICONS */
+
 .material-symbols-rounded {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
@@ -6,32 +17,75 @@
   'opsz' 24
 }
 
+/* ! CONTENEDOR BARRA LATERAL DERECHA */
+
 .barra-lateral-derecha {
   width: 300px;
   height: 700px;
-  background: #000;
 }
+
+/* ! CONTENEDOR NOVEDADES             */
 
 .contenedor-novedades {
   width: 223px;
   height: 454px;
   background-color: white;
+  box-shadow: -3px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -3px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px 13px 24px -8px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, auto);
-  gap: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.novedad{
+/* ! CARDS NOVEDAD             */
+
+.novedad {
   color: white;
-  width: 212px;
+  width: 210px;
   height: 144px;
+  margin: 2px;
   background-color: #9d0000;
   border-radius: 10px;
   padding: 20px;
   display: flex;
   flex-direction: column;
+}
+
+.material-symbols-rounded, .fecha-novedades {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fecha-novedades{
+  font-size: 10px;
+}
+
+.p-novedad {
+  margin-top: 1rem;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+/* ! CARD BENEFICIOS             */
+
+.card-beneficios {
+  width: 223px;
+  height: 157px;
+  margin-top: 8px;
+  background-color: #fff;
+  box-shadow: -3px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -3px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .beneficios {
@@ -40,7 +94,33 @@
   height: 144px;
   background-color: #ffa0a0;
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+
+.material-symbols-outlined {
+  display: flex; /* TODO*/
+}
+
+/* ! PROXIMOS EVENTOS          */
+
+.contenedor-proximos-eventos {
+  width: 223px;
+  height: 128px;
+  background-color: grey;
+  box-shadow: -3px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -3px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+}
+
+.proximos-eventos {
+  width: 220px;
+  height: 123px;
+  margin-top: 8px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
 }
