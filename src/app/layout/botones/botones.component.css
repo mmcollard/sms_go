@@ -44,8 +44,7 @@
   transition: background-color .3s;
 }
 
-.btn:hover,
-.btn:focus {
+.btn:hover{
   background-color: rgb(222, 222, 222);
 }
 
