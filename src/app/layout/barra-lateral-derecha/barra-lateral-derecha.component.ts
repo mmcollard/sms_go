@@ -15,4 +15,10 @@ export class BarraLateralDerechaComponent {
     'Descripcion'
   ]
 
+  proximosEventos: Array<string> = [
+    'After SMS',
+    'Jornada xxx',
+    'Semana de auditorías',
+    'Festejo de cumpleaños'
+  ]
 }
