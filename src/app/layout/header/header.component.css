@@ -7,18 +7,8 @@ header {
     justify-content: space-between;
     list-style-type: none;
     justify-content: space-around;
+    border-left: solid #A52030;
     /* padding: px;  */
-
-  }
-
-  .buscador-1 {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0 ;
-
 
   }
 
@@ -37,7 +27,7 @@ header {
   }
 
   .boxFom{
-     width: 100%;
+     width: 25%;
      height: auto;
      padding-left: 1rem;
   }
@@ -47,7 +37,7 @@ header {
     border: none;
     background: transparent;
     width: 100%;
-
+    padding-left: 10px;
 
   }
 
@@ -55,7 +45,9 @@ header {
     outline: none;
   }
 
-  .sin-viñetas .medio {
+
+
+  .sin-viñetas-medio {
     display: flex;
     list-style-type: none;
     justify-content: space-between;
@@ -66,14 +58,12 @@ header {
   .header-distribucion {
     width: 100%;
     /* max-width: 1024px; */
-    margin: 20px 0px;
     /* padding: 0 2rem; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     /* border: 0px 1px solid red; */
-    padding-bottom: 10px;
-
+    padding: 10px;
   }
 
 
@@ -92,25 +82,25 @@ header {
     display: flex;
     align-items: center;
     border: 1px solid grey;
-    border-radius: .5rem;
+    border-radius: 1rem;
+    background-color: lightgray;
   }
 
 
   .boton {
     background: transparent;
     border: none;
+    padding-inline-end: 5px;
   }
 
-  p {
-    display: flex;
-    color: #A52030;
-    font-size: 45px;
-    margin: 0;
+  .boton span {
+    color: #6c6c6c;
   }
 
 
   /* ------------------------     iconos borde --------------------------- */
   .material-symbols-outlined {
+    color: #A52030;
     font-variation-settings:
       'FILL' 0,
       'wght' 400,
@@ -126,62 +116,7 @@ header {
 
   li {
     margin: 10px;
-    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
-  }
-
-  .home {
-    color: #A52030;
-    font-size: 100px;
-  }
-
-  .replay {
-    color: #A52030;
-
-
-  }
-
-  .calendario {
-    color: #A52030;
-  }
-
-
-  .grupos {
-    color: #A52030;
-  }
-
-
-
-
-
-  /* ------     --------- estilo iconos post barra   --------   --------  --------- */
-
-  .barra {
-    color: #A52030;
-    height: auto;
-    width: 100px;
-  }
-
-
-  .link {
-    size: 100px;
-    color: #A52030;
-  }
-
-
-  .incognita {
-    color: #A52030;
-
-  }
-
-  .campana-notificacion {
-    color: #A52030;
-
-  }
-
-  .persona {
-    color: #A52030;
-
   }
 
