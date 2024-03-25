@@ -21,4 +21,32 @@ export class BarraLateralDerechaComponent {
     'Semana de auditorías',
     'Festejo de cumpleaños'
   ]
+
+  cumpleaniero = [
+    {
+      nombre: 'Juan',
+      apellido: 'Pérez',
+      fechaNacimiento: '05-15',
+      foto: '../assets/img/persona1.jpg'
+    },
+    {
+      nombre: 'María',
+      apellido: 'García',
+      fechaNacimiento: '10-20',
+      foto: '../assets/img/persona2.jpg'
+    },
+
+    {
+      nombre: 'Juan',
+      apellido: 'Pérez',
+      fechaNacimiento: '05-15',
+      foto: '../assets/img/persona3.jpg'
+    },
+    {
+      nombre: 'María',
+      apellido: 'García',
+      fechaNacimiento: '10-20',
+      foto: '../assets/img/persona4.jpg'
+    }
+  ];
 }

@@ -180,7 +180,6 @@ h4 {
 
 .cumpleanios {
   width: 223px;
-  height: 154px;
   margin-top: 12px;
   padding: 8px;
   color: #fff;
@@ -189,9 +188,6 @@ h4 {
   -webkit-box-shadow: -3px 13px 24px -8px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -3px 13px 24px -8px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .prox-cumples {
@@ -202,4 +198,24 @@ h4 {
 
 .cake {
   margin-right: 3px;
+}
+
+.datos-cumpleaniero {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  text-align: start;
+  padding: 4px;
+}
+
+.nombre-persona {
+  width: 30%;
+}
+
+.card-img-top {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  object-fit: cover;
 }
