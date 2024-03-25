@@ -9,10 +9,22 @@ import { Component } from '@angular/core';
   styleUrl: './barra-lateral-derecha.component.css'
 })
 export class BarraLateralDerechaComponent {
-  novedades: Array<string> = [
-    'Descripcion',
-    'Descripcion',
-    'Descripcion'
+  novedades = [
+    {
+      fecha: '25/03/2024',
+      titulo: 'Titulo 1',
+      descripcion: 'Descripcion',
+    },
+    {
+      fecha: 'xx/xx/xx',
+      titulo: 'Titulo 2',
+      descripcion: 'Descripcion',
+    },
+    {
+      fecha: 'xx/xx/xx',
+      titulo: 'Titulo 3',
+      descripcion: 'Descripcion',
+    }
   ]
 
   proximosEventos: Array<string> = [
@@ -22,7 +34,7 @@ export class BarraLateralDerechaComponent {
     'Festejo de cumpleaños'
   ]
 
-  cumpleaniero = [
+  cumpleanios = [
     {
       nombre: 'Juan',
       apellido: 'Pérez',

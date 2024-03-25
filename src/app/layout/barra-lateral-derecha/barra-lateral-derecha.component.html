@@ -23,8 +23,26 @@
         {{i +1 }} - {{personas}}
       </li>
     </ul> -->
+    @for (novedad of novedades; track $index) {
+      <div class="novedad">
+        <div class="linea-superior-novedad">
+          <span class="material-symbols-rounded">
+            campaign
+            <span class="fecha-novedades">
+              {{novedad.fecha}}
+            </span>
+          </span>
+          <p class="p-novedad">
+            {{novedad.descripcion}}
+          </p>
+        </div>
+      </div>
+    }
 
-    <div class="novedad" *ngFor="let novedades of novedades; index as i">
+
+
+
+    <!-- <div class="novedad" *ngFor="let novedades of novedades; index as i">
       <div class="linea-superior-novedad">
         <span class="material-symbols-rounded">
           campaign
@@ -33,10 +51,10 @@
           </span>
         </span>
         <p class="p-novedad">
-          {{ i + 1 }} - {{novedades}}
+          {{novedades}}
         </p>
       </div>
-    </div>
+    </div> -->
 
     <!-- <div class="novedad">
       <div class="linea-superior-novedad">
@@ -107,19 +125,18 @@
     </div>
 
     <div class="datos">
-      <div *ngFor="let cumpleaniero of cumpleaniero">
-        <div class="datos-cumpleaniero">
-          <p class="fecha">{{ cumpleaniero.fechaNacimiento }}
-          </p>
-
-            <img [src]="cumpleaniero.foto" class="card-img-top" alt="Foto de {{ cumpleaniero.nombre }}">
-            <p class="nombre-persona"> {{ cumpleaniero.nombre }} {{ cumpleaniero.apellido }}
+      @for (cumple of cumpleanios; track $index) {
+        <div>
+          <div class="datos-cumpleaniero">
+            <p class="fecha">{{ cumple.fechaNacimiento }}
             </p>
-          </div>
 
-
-
-      </div>
+              <img [src]="cumple.foto" class="card-img-top" alt="Foto de {{ cumple.nombre }}">
+              <p class="nombre-persona"> {{ cumple.nombre }} {{ cumple.apellido }}
+              </p>
+            </div>
+        </div>
+      }
     </div>
 
   </div>
