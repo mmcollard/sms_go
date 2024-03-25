@@ -85,7 +85,7 @@
         <ul *ngFor="let proximosEventos of proximosEventos; index as i">
           <span class="fecha-eventos">xx/xx/xx</span>
           <span class="material-symbols-outlined doble-flecha">
-          double_arrow
+            double_arrow
           </span>
           <a href="">{{proximosEventos}}
           </a>
@@ -97,16 +97,30 @@
 
   <!-- ! PROXIMOS CUMPLEAÑOS               -->
 
+
   <div class="cumpleanios">
     <div class="prox-cumples">
       <span class="material-symbols-outlined cake">
         cake
       </span>
-      <h4 class="">Proximos Cumpleaños</h4>
+      <h4>Próximos Cumpleaños</h4>
     </div>
 
-    <div class="prox-cumpleanios">
-      <link rel="stylesheet" href="">
+    <div class="datos">
+      <div *ngFor="let cumpleaniero of cumpleaniero">
+        <div class="datos-cumpleaniero">
+          <p class="fecha">{{ cumpleaniero.fechaNacimiento }}
+          </p>
 
+            <img [src]="cumpleaniero.foto" class="card-img-top" alt="Foto de {{ cumpleaniero.nombre }}">
+            <p class="nombre-persona"> {{ cumpleaniero.nombre }} {{ cumpleaniero.apellido }}
+            </p>
+          </div>
+
+
+
+      </div>
     </div>
+
   </div>
+</div>
