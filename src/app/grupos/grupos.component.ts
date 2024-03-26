@@ -1,13 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { HeaderComponent } from "../layout/header/header.component";
 
 @Component({
-  selector: 'app-grupos',
-  standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
-  templateUrl: './grupos.component.html',
-  styleUrl: './grupos.component.css'
+    selector: 'app-grupos',
+    standalone: true,
+    templateUrl: './grupos.component.html',
+    styleUrl: './grupos.component.css',
+    imports: [CommonModule, ReactiveFormsModule, HeaderComponent]
 })
 export class GruposComponent {
 

@@ -1,6 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-<<<<<<< HEAD
-
 * {
   margin: 0;
   padding: 0;
@@ -14,22 +12,4 @@ body {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-
 }
-=======
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    width: 100%;
-    height: auto;
-    position: relative;
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-  
-  }
->>>>>>> a524ec8eac7a0203989aba74a14565902be40f28
