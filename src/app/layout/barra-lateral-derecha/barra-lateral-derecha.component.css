@@ -1,0 +1,221 @@
+
+/* ! FAVICONS */
+
+.material-symbols-rounded {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+/* # CAMPANA */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* # CAJA DE REGALO */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+}
+
+/* # PASTEL DE CUMPLEAÑOS */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+p {
+  font-size: 10px;
+}
+
+h4 {
+  font-size: 12px;
+}
+
+/* ! CONTENEDOR BARRA LATERAL DERECHA */
+
+.barra-lateral-derecha {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ! CONTENEDOR NOVEDADES             */
+
+.contenedor-novedades {
+  width: 223px;
+  height: 460px;
+  background-color: white;
+  box-shadow: -3px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -3px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ! CARDS NOVEDAD             */
+
+.novedad {
+  color: white;
+  width: 210px;
+  height: 144px;
+  margin: 2px;
+  background-color: #9d0000;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.material-symbols-rounded, .fecha-novedades {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fecha-novedades{
+  font-size: 10px;
+}
+
+.p-novedad {
+  margin-top: 1rem;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+/* ! CARD BENEFICIOS             */
+
+.card-beneficios {
+  width: 223px;
+  height: 157px;
+  margin-top: 8px;
+  background-color: #ffa0a0;
+  border: 5px solid white;
+  box-shadow: -3px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -3px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+}
+
+.beneficios {
+  font-size: 14px;
+  color: white;
+  padding: 8px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.material-symbols-outlined {
+  display: flex;
+}
+
+/* ! PROXIMOS EVENTOS          */
+
+.contenedor-proximos-eventos {
+  width: 223px;
+  height: 125px;
+  margin-top: 8px;
+  padding: 8px;
+  box-shadow: -3px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -3px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  border: 4px solid grey;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items:baseline;
+}
+
+.prox-eventos {
+  width: 100%;
+  margin: 10px;
+}
+
+.prox-eventos ul {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fecha-eventos {
+  margin-right: 3px;
+  font-size: 10px;
+  display: flex;
+  align-items: start;
+}
+
+.doble-flecha {
+  font-size: 15px;
+  color: #A52030;
+}
+
+.prox-eventos a {
+  text-decoration: none;
+  font-size: 10px;
+  color: grey;
+  list-style: none;
+}
+
+/* ! PROXIMOS CUMPLAÑOS         */
+
+.cumpleanios {
+  width: 223px;
+  margin-top: 12px;
+  padding: 8px;
+  color: #fff;
+  background-color: #9d00001e;
+  box-shadow: -3px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -3px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px 13px 24px -8px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+}
+
+.prox-cumples {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cake {
+  margin-right: 3px;
+}
+
+.datos-cumpleaniero {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  text-align: start;
+  padding: 4px;
+}
+
+.nombre-persona {
+  width: 30%;
+}
+
+.card-img-top {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  object-fit: cover;
+}

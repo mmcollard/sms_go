@@ -11,17 +11,13 @@
 }
 
 .card {
-  color: #8D8D88;
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
   width: 100%;
   margin: 0 auto;
   border-width: 0;
   outline: none;
   border-radius: 1rem;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.335);
+  background-color: white;
 }
 
 .card-body {
@@ -80,8 +76,7 @@
   transition: background-color .3s;
 }
 
-.btn:hover,
-.btn:focus {
+.btn:hover {
   background-color: rgb(222, 222, 222);
 }
 
