@@ -1,0 +1,10 @@
+.container {
+  background-color: #A52030;
+  border-radius: 1rem;
+  color: white;
+}
+
+.foto-perfil {
+  border-radius: 100%;
+  border: white 2px;
+}
