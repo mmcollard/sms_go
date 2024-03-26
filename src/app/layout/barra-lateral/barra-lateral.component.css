@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+a, h2, h3{
+  font-family: raleway;
+
+}
+
+a{
+  color: #8D8D88;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover{
+  color: #4b4b4a;
+}
+
+
+h2, h3{
+  color: #4b4b4a;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+
+.contenedor-barra-lateral-izquierda{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.barra-lateral-izquierda{
+  background-color: #fff;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 10px 16px 48px -3px rgba(125,125,125,0.27);
+-webkit-box-shadow: 10px 16px 48px -3px rgba(125,125,125,0.27);
+-moz-box-shadow: 10px 16px 48px -3px rgba(125,125,125,0.27);
+}
+
+.nombre-apellido{
+  display: flex;
+  align-items: center;
+}
+.img-perfil{
+  background-image: radial-gradient(circle, #ffe1e5, #f2bec4, #e49ba1, #d3797f, #c1565d, #b6444c, #aa313b, #9e1a2a, #991525, #941020, #8e0b1c, #890517);
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.contenedor-links{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.espacio, .grupo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.espacio span, .grupo span{
+  margin-right: 20px;
+}
+.espacio, .grupo, .contenedor-links a{
+  margin-top: 20px;
+
+}
+
+.simbolo{
+  color: #A52030
+}
+
+.linea{
+  background-color: #A52030;
+  width: 100%;
+  height: 4px;
+  border-radius: 3px;
+}
+
+
+
