@@ -1,0 +1,143 @@
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<!-- ! CONTENEDOR BARRA LATERAL DERECHA -->
+
+<div class="barra-lateral-derecha">
+
+  <!-- ! CONTENEDOR NOVEDADES             -->
+
+  <div class="contenedor-novedades">
+
+    <!-- ! CARDS NOVEDAD                   -->
+
+    <!--
+    <h4>*ngFor</h4>
+
+    <h5>Array de strings (en una lista)</h5>
+
+    <ul>
+      <li *ngFor="let personas of personas; index as i">
+        {{i +1 }} - {{personas}}
+      </li>
+    </ul> -->
+    @for (novedad of novedades; track $index) {
+      <div class="novedad">
+        <div class="linea-superior-novedad">
+          <span class="material-symbols-rounded">
+            campaign
+            <span class="fecha-novedades">
+              {{novedad.fecha}}
+            </span>
+          </span>
+          <p class="p-novedad">
+            {{novedad.descripcion}}
+          </p>
+        </div>
+      </div>
+    }
+
+
+
+
+    <!-- <div class="novedad" *ngFor="let novedades of novedades; index as i">
+      <div class="linea-superior-novedad">
+        <span class="material-symbols-rounded">
+          campaign
+          <span class="fecha-novedades">
+            xx/xx/xx
+          </span>
+        </span>
+        <p class="p-novedad">
+          {{novedades}}
+        </p>
+      </div>
+    </div> -->
+
+    <!-- <div class="novedad">
+      <div class="linea-superior-novedad">
+        <span class="material-symbols-rounded">
+          campaign
+          <span class="fecha-novedades">
+            xx/xx/xx
+          </span>
+        </span>
+        <p class="p-novedad">
+          Novedad XXXXXXXXXXX
+        </p>
+      </div>
+    </div> -->
+  </div>
+
+  <!-- ! CARD BENEFICIOS                 -->
+
+  <div class="card-beneficios">
+    <div class="beneficios">
+      <span class="material-symbols-outlined">
+        featured_seasonal_and_gifts
+      </span>
+      <h4>¡Beneficios SMS!</h4>
+    </div>
+  </div>
+
+  <!-- ! PROXIMOS EVENTOS                -->
+
+  <!--
+    <h4>*ngFor</h4>
+
+    <h5>Array de strings (en una lista)</h5>
+
+    <ul>
+      <li *ngFor="let personas of personas; index as i">
+        {{i +1 }} - {{personas}}
+      </li>
+    </ul> -->
+
+  <div class="contenedor-proximos-eventos">
+    <div class="proximos-eventos">
+      <h4>Proximos Eventos</h4>
+
+      <div class="prox-eventos">
+        <ul *ngFor="let proximosEventos of proximosEventos; index as i">
+          <span class="fecha-eventos">xx/xx/xx</span>
+          <span class="material-symbols-outlined doble-flecha">
+            double_arrow
+          </span>
+          <a href="">{{proximosEventos}}
+          </a>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ! PROXIMOS CUMPLEAÑOS               -->
+
+
+  <div class="cumpleanios">
+    <div class="prox-cumples">
+      <span class="material-symbols-outlined cake">
+        cake
+      </span>
+      <h4>Próximos Cumpleaños</h4>
+    </div>
+
+    <div class="datos">
+      @for (cumple of cumpleanios; track $index) {
+        <div>
+          <div class="datos-cumpleaniero">
+            <p class="fecha">{{ cumple.fechaNacimiento }}
+            </p>
+
+              <img [src]="cumple.foto" class="card-img-top" alt="Foto de {{ cumple.nombre }}">
+              <p class="nombre-persona"> {{ cumple.nombre }} {{ cumple.apellido }}
+              </p>
+            </div>
+        </div>
+      }
+    </div>
+
+  </div>
+</div>
